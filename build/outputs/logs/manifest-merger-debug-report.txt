@@ -69,7 +69,9 @@ uses-sdk
 INJECTED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.segway.robot:robot-connectivity-sdk:0.5.9] /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/exploded-aar/com.segway.robot/robot-connectivity-sdk/0.5.9/AndroidManifest.xml:7:5-9:41
 MERGED from [com.segway.robot:base-connectivity-sdk:1.0] /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/exploded-aar/com.segway.robot/base-connectivity-sdk/1.0/AndroidManifest.xml:7:5-9:41
-MERGED from [com.segway.robot:sdkbase:0.1.22] /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/exploded-aar/com.segway.robot/sdkbase/0.1.22/AndroidManifest.xml:7:5-9:41
+MERGED from [com.segway.robot:headsdk:0.5.27] /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/exploded-aar/com.segway.robot/headsdk/0.5.27/AndroidManifest.xml:7:5-9:41
+MERGED from [com.segway.robot:basesdk:0.5.27] /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/exploded-aar/com.segway.robot/basesdk/0.5.27/AndroidManifest.xml:7:5-9:41
+MERGED from [com.segway.robot:sdkbase:0.1.24] /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/exploded-aar/com.segway.robot/sdkbase/0.1.24/AndroidManifest.xml:7:5-9:41
 	android:targetSdkVersion
 		INJECTED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/AndroidManifest.xml
 		INJECTED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/AndroidManifest.xml
@@ -82,6 +84,6 @@ ADDED from [com.segway.robot:base-connectivity-sdk:1.0] /home/ethi/AndroidStudio
 		ADDED from [com.segway.robot:base-connectivity-sdk:1.0] /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/exploded-aar/com.segway.robot/base-connectivity-sdk/1.0/AndroidManifest.xml:11:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from [com.segway.robot:base-connectivity-sdk:1.0] /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/exploded-aar/com.segway.robot/base-connectivity-sdk/1.0/AndroidManifest.xml:12:5-81
-MERGED from [com.segway.robot:sdkbase:0.1.22] /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/exploded-aar/com.segway.robot/sdkbase/0.1.22/AndroidManifest.xml:11:5-81
+MERGED from [com.segway.robot:sdkbase:0.1.24] /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/exploded-aar/com.segway.robot/sdkbase/0.1.24/AndroidManifest.xml:11:5-81
 	android:name
 		ADDED from [com.segway.robot:base-connectivity-sdk:1.0] /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/exploded-aar/com.segway.robot/base-connectivity-sdk/1.0/AndroidManifest.xml:12:22-78
