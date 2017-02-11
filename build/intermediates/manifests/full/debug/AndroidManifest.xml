@@ -12,6 +12,9 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-feature android:name="android.hardware.usb.host" />
+
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
@@ -28,11 +31,17 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
         </activity>
 
         <meta-data
             android:name="packageTo2"
             android:value="com.segway.robot.lomoremotephone" />
+        <meta-data
+            android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+            android:resource="@xml/device_filter" />
     </application>
 
 </manifest>

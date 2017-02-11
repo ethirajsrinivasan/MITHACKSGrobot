@@ -49,4 +49,5 @@ dependencies {
     compile 'com.segway.robot:robot-connectivity-sdk:0.5.9'
     compile 'com.segway.robot:headsdk:0.5.27'
     compile 'com.segway.robot:basesdk:0.5.27'
+    compile files('libs/usbserial.jar')
 }
