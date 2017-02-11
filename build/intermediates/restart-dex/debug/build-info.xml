@@ -5,8 +5,8 @@
     density="hdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="3959297007070"
-    token="1229046795798977746"
+    timestamp="216690144732543"
+    token="5614426143609154148"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
@@ -23,14 +23,14 @@
         duration="0" />
 
     <artifact
-        location="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/outputs/apk/ConnectivitySample_Robot-debug.apk"
+        location="G:\AndroidWorkspace\Text_Loco_Combination\MITHACKSGrobot\build\outputs\apk\MITHACKSGrobot-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="3959297007070"
+        timestamp="216690144732543"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/outputs/apk/ConnectivitySample_Robot-debug.apk"
+            location="G:\AndroidWorkspace\Text_Loco_Combination\MITHACKSGrobot\build\outputs\apk\MITHACKSGrobot-debug.apk"
             type="MAIN" />
     </build>
 

@@ -3,111 +3,111 @@
 
     <item
         is-multidex="true"
-        jar="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/exploded-aar/com.segway.robot/base-connectivity-sdk/1.0/jars/libs/slf4j-api-1.7.14.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="22.0.0"
-        sha1="1bdf26979864b3605d61bfbde664474dbe52b13a">
-        <dex dex="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/transforms/dex/debug/folders/1000/10/slf4j-api-1.7.14_43ecb4959c342e0bf5dd9d8c8dce0fad8c05a598/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/exploded-aar/com.segway.robot/base-connectivity-sdk/1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="22.0.0"
-        sha1="c0988ddf9eb086e0c017fbe2ce8fb3a7e1e0c16b">
-        <dex dex="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/transforms/dex/debug/folders/1000/10/com.segway.robot-base-connectivity-sdk-1.0_0013e7d7b3aa75a3c48c4ed584cc384b0ce0e74c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/exploded-aar/com.segway.robot/robot-connectivity-sdk/0.5.9/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="22.0.0"
-        sha1="61fa513725672369c0afdc7681834c1f72e7ef79">
-        <dex dex="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/transforms/dex/debug/folders/1000/10/com.segway.robot-robot-connectivity-sdk-0.5.9_a7d80a1bcc0ec9c0dfe9dc7db62f57b2bb8d7449/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/exploded-aar/com.segway.robot/base-connectivity-sdk/1.0/jars/libs/mina-core-2.0.13.jar"
+        jar="G:\AndroidWorkspace\Text_Loco_Combination\MITHACKSGrobot\build\intermediates\exploded-aar\com.segway.robot\base-connectivity-sdk\1.0\jars\libs\mina-core-2.0.13.jar"
         jumboMode="true"
         optimize="true"
         revision="22.0.0"
         sha1="e442feab40134d77aab0af454ca1528427c67158">
-        <dex dex="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/transforms/dex/debug/folders/1000/10/mina-core-2.0.13_d1bdb7cfe673e7eace327c3636e5988c853209ce/classes.dex" />
+        <dex dex="G:\AndroidWorkspace\Text_Loco_Combination\MITHACKSGrobot\build\intermediates\transforms\dex\debug\folders\1000\10\mina-core-2.0.13_aad89e97740a037c62fbdaa548fd85aac725b05a\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/exploded-aar/com.segway.robot/headsdk/0.5.27/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="22.0.0"
-        sha1="4198da74cf4818a57299da421c05ebf37d7771a2">
-        <dex dex="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/transforms/dex/debug/folders/1000/10/com.segway.robot-headsdk-0.5.27_c907211f8c301a6e03dd03e3250bd36361a3d4c1/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/exploded-aar/com.segway.robot/basesdk/0.5.27/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="22.0.0"
-        sha1="83d55b9caa57cb40522d90dee2e27deee0ad75f2">
-        <dex dex="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/transforms/dex/debug/folders/1000/10/com.segway.robot-basesdk-0.5.27_a52ec0c5e155b849b6dacd7ead853a7d34189e13/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="22.0.0"
-        sha1="e775409b539366815fa3fed7a98b1140d801d09b">
-        <dex dex="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_122524099fd7449f8323eabc61c848c38ba9e32f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/exploded-aar/com.segway.robot/sdkbase/0.1.24/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="22.0.0"
-        sha1="09049761d460a582ec4bb6346730e134fd8cf40a">
-        <dex dex="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/transforms/dex/debug/folders/1000/10/com.segway.robot-sdkbase-0.1.24_4e4ae3a839a2f2e3f32114ccf1047092d3179e91/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/libs/usbserial.jar"
+        jar="G:\AndroidWorkspace\Text_Loco_Combination\MITHACKSGrobot\libs\usbserial.jar"
         jumboMode="true"
         optimize="true"
         revision="22.0.0"
         sha1="450a08132dff830581b2b82c380c5f32488159d3">
-        <dex dex="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/transforms/dex/debug/folders/1000/2/usbserial_878e253908ab67cbdb13e5d5931f945a8ea536e4/classes.dex" />
+        <dex dex="G:\AndroidWorkspace\Text_Loco_Combination\MITHACKSGrobot\build\intermediates\transforms\dex\debug\folders\1000\2\usbserial_1d356637337cdabdd24c37e35037093a4006ccc4\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/exploded-aar/com.segway.robot/base-connectivity-sdk/1.0/jars/libs/slf4j-nop-1.7.14.jar"
+        jar="G:\AndroidWorkspace\Text_Loco_Combination\MITHACKSGrobot\build\intermediates\exploded-aar\com.segway.robot\base-connectivity-sdk\1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="22.0.0"
-        sha1="b9da43afb34b0cc4cfb0b5afef9e5b8f2e155e0e">
-        <dex dex="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/transforms/dex/debug/folders/1000/10/slf4j-nop-1.7.14_9785637ee562a146b06f759b25e8627c2db305f4/classes.dex" />
+        sha1="c0988ddf9eb086e0c017fbe2ce8fb3a7e1e0c16b">
+        <dex dex="G:\AndroidWorkspace\Text_Loco_Combination\MITHACKSGrobot\build\intermediates\transforms\dex\debug\folders\1000\10\com.segway.robot-base-connectivity-sdk-1.0_08c8616a859a5581d65f1bf1b332dbffed65836d\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="G:\AndroidWorkspace\Text_Loco_Combination\MITHACKSGrobot\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="22.0.0"
-        sha1="9c82b7e9c4d49225efbca78a4b867333297c40e7">
-        <dex dex="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_a763241587018aaf84c2837e7abb2d1129d6ad5d/classes.dex" />
+        sha1="fe4f03b8a1dbfdafff51827b73005d3f288963bf">
+        <dex dex="G:\AndroidWorkspace\Text_Loco_Combination\MITHACKSGrobot\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_6c79b0ccb71013afdbf5f8be0eb90f903ad2b167\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/ethi/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jar="C:\Users\Navi\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
         jumboMode="true"
         optimize="true"
         revision="22.0.0"
         sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
-        <dex dex="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.1.1_4ce80107fa225b68d7cce573aa6c4c96d307bfc5/classes.dex" />
+        <dex dex="G:\AndroidWorkspace\Text_Loco_Combination\MITHACKSGrobot\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.1.1_f99548b1bc3e4025e711f7e4779b2d99a87acb83\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\AndroidWorkspace\Text_Loco_Combination\MITHACKSGrobot\build\intermediates\exploded-aar\com.segway.robot\robot-connectivity-sdk\0.5.9\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.0"
+        sha1="61fa513725672369c0afdc7681834c1f72e7ef79">
+        <dex dex="G:\AndroidWorkspace\Text_Loco_Combination\MITHACKSGrobot\build\intermediates\transforms\dex\debug\folders\1000\10\com.segway.robot-robot-connectivity-sdk-0.5.9_b0ecd7a3b549764815e4489d397222d9c0bbebaf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\AndroidWorkspace\Text_Loco_Combination\MITHACKSGrobot\build\intermediates\exploded-aar\com.segway.robot\sdkbase\0.1.24\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.0"
+        sha1="09049761d460a582ec4bb6346730e134fd8cf40a">
+        <dex dex="G:\AndroidWorkspace\Text_Loco_Combination\MITHACKSGrobot\build\intermediates\transforms\dex\debug\folders\1000\10\com.segway.robot-sdkbase-0.1.24_3acd8f09d27e9722c6749d076131e336b7d8552f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\AndroidWorkspace\Text_Loco_Combination\MITHACKSGrobot\build\intermediates\exploded-aar\com.segway.robot\base-connectivity-sdk\1.0\jars\libs\slf4j-api-1.7.14.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.0"
+        sha1="1bdf26979864b3605d61bfbde664474dbe52b13a">
+        <dex dex="G:\AndroidWorkspace\Text_Loco_Combination\MITHACKSGrobot\build\intermediates\transforms\dex\debug\folders\1000\10\slf4j-api-1.7.14_c27d2366c67da265084e2296f998d821582ddea4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\AndroidWorkspace\Text_Loco_Combination\MITHACKSGrobot\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.0"
+        sha1="d3e4938c33b9dc448a7c49624be4c07010d4ab6a">
+        <dex dex="G:\AndroidWorkspace\Text_Loco_Combination\MITHACKSGrobot\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_48684c5613bd0c98c1064eb4bc17e66c4efad2db\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\AndroidWorkspace\Text_Loco_Combination\MITHACKSGrobot\build\intermediates\exploded-aar\com.segway.robot\headsdk\0.5.27\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.0"
+        sha1="4198da74cf4818a57299da421c05ebf37d7771a2">
+        <dex dex="G:\AndroidWorkspace\Text_Loco_Combination\MITHACKSGrobot\build\intermediates\transforms\dex\debug\folders\1000\10\com.segway.robot-headsdk-0.5.27_db810171d1b8dadf38dcee2b0b92b770ceaa39c5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\AndroidWorkspace\Text_Loco_Combination\MITHACKSGrobot\build\intermediates\exploded-aar\com.segway.robot\base-connectivity-sdk\1.0\jars\libs\slf4j-nop-1.7.14.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.0"
+        sha1="b9da43afb34b0cc4cfb0b5afef9e5b8f2e155e0e">
+        <dex dex="G:\AndroidWorkspace\Text_Loco_Combination\MITHACKSGrobot\build\intermediates\transforms\dex\debug\folders\1000\10\slf4j-nop-1.7.14_9ae16c3f15c6dc3e9e4e009cccdcb6bf1f521714\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\AndroidWorkspace\Text_Loco_Combination\MITHACKSGrobot\build\intermediates\exploded-aar\com.segway.robot\basesdk\0.5.27\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.0"
+        sha1="83d55b9caa57cb40522d90dee2e27deee0ad75f2">
+        <dex dex="G:\AndroidWorkspace\Text_Loco_Combination\MITHACKSGrobot\build\intermediates\transforms\dex\debug\folders\1000\10\com.segway.robot-basesdk-0.5.27_44886ced605630d9681f840a8f0faeb7a33b7446\classes.dex" />
     </item>
 
 </items>

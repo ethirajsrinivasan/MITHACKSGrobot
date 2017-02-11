@@ -1,18 +1,18 @@
 #Internal package file, do not edit.
-#Sat Feb 11 21:49:28 SGT 2017
-1.base=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/res/resources-debug.ap_
-4.file=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/res/resources-debug.ap_/res/xml/device_filter.xml
-1.file=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/res/resources-debug.ap_/res/layout/activity_main.xml
+#Sun Feb 12 02:26:34 SGT 2017
+1.base=G\:\\AndroidWorkspace\\Text_Loco_Combination\\MITHACKSGrobot\\build\\intermediates\\res\\resources-debug.ap_
+4.file=G\:\\AndroidWorkspace\\Text_Loco_Combination\\MITHACKSGrobot\\build\\intermediates\\res\\resources-debug.ap_\\AndroidManifest.xml
+1.file=G\:\\AndroidWorkspace\\Text_Loco_Combination\\MITHACKSGrobot\\build\\intermediates\\res\\resources-debug.ap_\\resources.arsc
 4.set=ANDROID_RESOURCE
-2.base=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/res/resources-debug.ap_
+2.base=G\:\\AndroidWorkspace\\Text_Loco_Combination\\MITHACKSGrobot\\build\\intermediates\\res\\resources-debug.ap_
 3.set=ANDROID_RESOURCE
 2.set=ANDROID_RESOURCE
-2.file=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/res/resources-debug.ap_/resources.arsc
+2.file=G\:\\AndroidWorkspace\\Text_Loco_Combination\\MITHACKSGrobot\\build\\intermediates\\res\\resources-debug.ap_\\res\\xml\\device_filter.xml
 count=5
 1.set=ANDROID_RESOURCE
-3.base=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/res/resources-debug.ap_
+3.base=G\:\\AndroidWorkspace\\Text_Loco_Combination\\MITHACKSGrobot\\build\\intermediates\\res\\resources-debug.ap_
 0.set=ANDROID_RESOURCE
-0.base=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/res/resources-debug.ap_
-3.file=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/res/resources-debug.ap_/AndroidManifest.xml
-0.file=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/res/resources-debug.ap_/res/mipmap-xxxhdpi-v4/ic_launcher.png
-4.base=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/res/resources-debug.ap_
+0.base=G\:\\AndroidWorkspace\\Text_Loco_Combination\\MITHACKSGrobot\\build\\intermediates\\res\\resources-debug.ap_
+3.file=G\:\\AndroidWorkspace\\Text_Loco_Combination\\MITHACKSGrobot\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_main.xml
+0.file=G\:\\AndroidWorkspace\\Text_Loco_Combination\\MITHACKSGrobot\\build\\intermediates\\res\\resources-debug.ap_\\res\\mipmap-xxxhdpi-v4\\ic_launcher.png
+4.base=G\:\\AndroidWorkspace\\Text_Loco_Combination\\MITHACKSGrobot\\build\\intermediates\\res\\resources-debug.ap_

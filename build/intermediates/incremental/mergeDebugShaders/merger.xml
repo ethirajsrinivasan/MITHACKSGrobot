@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/shaders"/></dataSet><dataSet config="debug"><source path="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/debug/shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="G:\AndroidWorkspace\Text_Loco_Combination\MITHACKSGrobot\src\main\shaders"/></dataSet><dataSet config="debug"><source path="G:\AndroidWorkspace\Text_Loco_Combination\MITHACKSGrobot\src\debug\shaders"/></dataSet></merger>
