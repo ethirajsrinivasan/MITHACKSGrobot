@@ -34,23 +34,6 @@ public class MainActivity extends Activity {
     private static final int RUN_TIME = 2000;
     private Timer mTimer;
 
-    private ServiceBinder.BindStateListener mBindStateListener = new ServiceBinder.BindStateListener() {
-        @Override
-        public void onBind() {
-            Log.d(TAG, "onBind: ");
-            try {
-                //register MessageConnectionListener in the RobotMessageRouter
-                mRobotMessageRouter.register(mMessageConnectionListener);
-            } catch (RobotException e) {
-                e.printStackTrace();
-            }
-        }
-
-        @Override
-        public void onUnbind(String reason) {
-            Log.e(TAG, "onUnbind: " + reason);
-        }
-    };
 
     private MessageRouter.MessageConnectionListener mMessageConnectionListener = new RobotMessageRouter.MessageConnectionListener() {
         @Override
@@ -109,8 +92,8 @@ public class MainActivity extends Activity {
                 if (message.equals("Go")) {
                    if(isBind) {
                        // Add code to grab medicine
-                       
-                       moveRobot();
+
+                       //moveRobot();
                    }
 
                 }
@@ -131,7 +114,7 @@ public class MainActivity extends Activity {
                 float mLinearVelocity = 0.5f;
                 if (isBind) {
                     mBase.setLinearVelocity(mLinearVelocity);
-                    mBase.setAngularVelocity(0.2f);
+                    //mBase.setAngularVelocity(0.2f);
                 }
                 // set robot base linearVelocity, unit is rad/s, rand is -PI ~ PI.
 
@@ -156,13 +139,12 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getActionBar().setDisplayHomeAsUpEnabled(true);
-        initBase();
         //get RobotMessageRouter
+        mBase = Base.getInstance();
         mRobotMessageRouter = RobotMessageRouter.getInstance();
-        //bind to connection service in robot
-        mRobotMessageRouter.bindService(this, mBindStateListener);
+        mRobotMessageRouter.bindService(this, initMessageBinder);
+        mBase.bindService(getApplicationContext(), initBinder);
 
-        //moveRobot();
     }
 
 
@@ -176,40 +158,52 @@ public class MainActivity extends Activity {
             e.printStackTrace();
         }
         mRobotMessageRouter.unbindService();
+        mBase.unbindService();
         Log.d(TAG, "onDestroy: ");
 
     }
 
-    private void initBase() {
-        // get Base Instance
-        mBase = Base.getInstance();
-        // bindService, if not, all Base api will not work.
-        mBase.bindService(getApplicationContext(), new ServiceBinder.BindStateListener() {
-            @Override
-            public void onBind() {
-                isBind = true;
-                mTimer = new Timer();
-                mTimer.scheduleAtFixedRate(new TimerTask() {
-                    @Override
-                    public void run() {
-                        final AngularVelocity av = mBase.getAngularVelocity();
-                        final LinearVelocity lv = mBase.getLinearVelocity();
-                        Log.d("Linear Velocity ::" , lv.toString());
-                        moveRobot();
-                    }
-                }, 50, 200);
+    private ServiceBinder.BindStateListener initBinder = new ServiceBinder.BindStateListener() {
+        @Override
+        public void onBind() {
+            isBind = true;
+            try {
+                final LinearVelocity lv = mBase.getLinearVelocity();
+                Log.d("Linear Velocity ::" , lv.toString());
+                moveRobot();
+            } catch (Exception e) {
+                e.printStackTrace();
             }
+        }
+        @Override
+        public void onUnbind(String reason) {
+            isBind = false;
+            if (mTimer != null) {
+                mTimer.cancel();
+                mTimer = null;
+            }
+        }
+    };
 
-            @Override
-            public void onUnbind(String reason) {
-                isBind = false;
-                if (mTimer != null) {
-                    mTimer.cancel();
-                    mTimer = null;
-                }
+    private ServiceBinder.BindStateListener initMessageBinder = new ServiceBinder.BindStateListener() {
+        @Override
+        public void onBind() {
+            isBind = true;
+            try {
+                mRobotMessageRouter.register(mMessageConnectionListener);
+            } catch (Exception e) {
+                e.printStackTrace();
             }
-        });
-        getActionBar().setDisplayHomeAsUpEnabled(true);
-    }
+        }
+        @Override
+        public void onUnbind(String reason) {
+            isBind = false;
+            if (mTimer != null) {
+                mTimer.cancel();
+                mTimer = null;
+            }
+        }
+    };
+
 
 }

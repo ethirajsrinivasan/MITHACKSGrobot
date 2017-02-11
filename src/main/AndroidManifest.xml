@@ -19,6 +19,7 @@
         <activity android:name=".HeadActivity"
                   android:screenOrientation="landscape">
         </activity>
+        <meta-data android:name="packageTo2" android:value="com.segway.robot.lococonn"></meta-data>
     </application>
 
 </manifest>

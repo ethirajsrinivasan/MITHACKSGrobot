@@ -1,0 +1,12 @@
+*.class
+*.apk
+.idea*
+.DS_Store
+.gradle/
+LocomotionSample.iml
+Loomo_Loco_Conn.iml
+build/
+gradle/
+gradlew
+gradlew.bat
+local.properties
