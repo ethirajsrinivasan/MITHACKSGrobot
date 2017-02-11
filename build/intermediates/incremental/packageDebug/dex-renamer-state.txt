@@ -1,4 +1,4 @@
-#Sat Feb 11 22:00:36 SGT 2017
+#Sun Feb 12 01:25:39 SGT 2017
 base.0=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_122524099fd7449f8323eabc61c848c38ba9e32f
 renamed.1=classes2.dex
 renamed.0=classes.dex

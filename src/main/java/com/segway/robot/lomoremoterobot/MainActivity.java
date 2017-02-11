@@ -26,6 +26,8 @@ import android.widget.Toast;
 
 import com.felhr.usbserial.UsbSerialDevice;
 import com.felhr.usbserial.UsbSerialInterface;
+import com.segway.robot.algo.Pose2D;
+import com.segway.robot.lomoremoterobot.comtroller.SimpleController;
 import com.segway.robot.sdk.base.bind.ServiceBinder;
 import com.segway.robot.sdk.baseconnectivity.Message;
 import com.segway.robot.sdk.baseconnectivity.MessageConnection;
@@ -49,6 +51,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Timer;
 
+import static android.R.attr.x;
+import static android.R.attr.y;
 import static android.R.transition.move;
 
 public class MainActivity extends Activity implements View.OnClickListener {
@@ -65,6 +69,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private TextView textViewIp;
     private Button sendByteButton;
     private Button sendStringButton;
+
+    SimpleController mController;
 
     private TextView textViewId;
     private TextView textViewTime;
@@ -175,8 +181,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 Log.d(TAG,message.getContent().toString() );
                 if(message.getContent().toString().equals("Go")){
                   moveRobot();
-                  moveRobot();
-                  moveRobot();
                 }
                 runOnUiThread(new Runnable() {
                     @Override
@@ -229,30 +233,50 @@ public class MainActivity extends Activity implements View.OnClickListener {
     }
 
     private void moveRobot() {
-        new Thread() {
-            //@Override
-            public void run() {
-                float mLinearVelocity = 1f;
-                if (isBind) {
-                    mBase.setLinearVelocity(mLinearVelocity);
-                    //mBase.setAngularVelocity(0.2f);
+        // new Thread() {
+        //     //@Override
+        //     public void run() {
+        //         float mLinearVelocity = 1f;
+        //         if (isBind) {
+        //             mBase.setLinearVelocity(mLinearVelocity);
+        //             //mBase.setAngularVelocity(0.2f);
+        //         }
+        //         // set robot base linearVelocity, unit is rad/s, rand is -PI ~ PI.
+
+
+        //         // let the robot run for 2 seconds
+        //         try {
+        //             Thread.sleep(RUN_TIME);
+        //         } catch (InterruptedException e) {
+        //         }
+
+        //         // stop
+        //         if (isBind) {
+        //             mBase.setLinearVelocity(0);
+        //         }
+
+        //     }
+        // }.start();
+
+
+        //code from sample
+        SimpleController controller = mController;
+        if (controller == null) {
+            mController = new SimpleController(new SimpleController.StateListener() {
+                @Override
+                public void onFinish() {
+                    mController = null;
                 }
-                // set robot base linearVelocity, unit is rad/s, rand is -PI ~ PI.
-
-
-                // let the robot run for 2 seconds
-                try {
-                    Thread.sleep(RUN_TIME);
-                } catch (InterruptedException e) {
-                }
-
-                // stop
-                if (isBind) {
-                    mBase.setLinearVelocity(0);
-                }
-
-            }
-        }.start();
+            }, mBase);
+            controller = mController;
+          Pose2D post = mBase.getOdometryPose(-1);
+          Float x =  post.getX();
+          Float y =  post.getY();
+          Float z =  post.getTheta();
+          controller.setTargetRobotPose(x+5,y,z);
+            controller.updatePoseAndDistance();
+            controller.startProcess();
+        }
     }
 
     @Override
