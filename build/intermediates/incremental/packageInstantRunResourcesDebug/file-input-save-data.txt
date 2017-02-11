@@ -1,0 +1,21 @@
+#Internal package file, do not edit.
+#Sat Feb 11 15:05:24 SGT 2017
+2.base=/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/res/resources-debug.ap_
+5.file=/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/res/resources-debug.ap_/res/mipmap-xxxhdpi-v4/ic_launcher.png
+5.set=ANDROID_RESOURCE
+3.base=/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/res/resources-debug.ap_
+2.set=ANDROID_RESOURCE
+4.base=/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/res/resources-debug.ap_
+count=6
+0.file=/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/res/resources-debug.ap_/res/layout/activity_head.xml
+5.base=/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/res/resources-debug.ap_
+4.set=ANDROID_RESOURCE
+1.file=/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/res/resources-debug.ap_/resources.arsc
+1.set=ANDROID_RESOURCE
+2.file=/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/res/resources-debug.ap_/AndroidManifest.xml
+0.base=/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/res/resources-debug.ap_
+3.file=/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/res/resources-debug.ap_/res/layout/activity_main.xml
+3.set=ANDROID_RESOURCE
+1.base=/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/res/resources-debug.ap_
+4.file=/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/res/resources-debug.ap_/res/layout/activity_base.xml
+0.set=ANDROID_RESOURCE

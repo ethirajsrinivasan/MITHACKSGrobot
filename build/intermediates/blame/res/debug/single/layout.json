@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/res/merged/debug/layout/activity_base.xml",
+        "source": "/Users/pbanavara/Downloads/Loomo_Loco_Conn/src/main/res/layout/activity_base.xml"
+    },
+    {
+        "merged": "/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/Users/pbanavara/Downloads/Loomo_Loco_Conn/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/res/merged/debug/layout/activity_head.xml",
+        "source": "/Users/pbanavara/Downloads/Loomo_Loco_Conn/src/main/res/layout/activity_head.xml"
+    }
+]

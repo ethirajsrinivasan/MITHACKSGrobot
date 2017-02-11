@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="headsdk-0.5.27">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/build/intermediates/exploded-aar/com.segway.robot/headsdk/0.5.27/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/build/intermediates/exploded-aar/com.segway.robot/headsdk/0.5.27/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/build/intermediates/exploded-aar/com.segway.robot/headsdk/0.5.27/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.segway.robot/headsdk/0.5.27/e5b71a1e609e7e8183567e51a9aaf0a99f32db6c/headsdk-0.5.27-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

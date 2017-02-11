@@ -1,0 +1,501 @@
+[
+    {
+        "outputFile": "/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 45,
+                    "endOffset": 96
+                },
+                "from": {
+                    "file": "/Users/pbanavara/Downloads/Loomo_Loco_Conn/src/main/res/values/colors.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 157,
+                        "endColumn": 45,
+                        "endOffset": 198
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 101,
+                    "endColumn": 46,
+                    "endOffset": 143
+                },
+                "from": {
+                    "file": "/Users/pbanavara/Downloads/Loomo_Loco_Conn/src/main/res/values/colors.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 57,
+                        "endColumn": 46,
+                        "endOffset": 99
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 148,
+                    "endColumn": 50,
+                    "endOffset": 194
+                },
+                "from": {
+                    "file": "/Users/pbanavara/Downloads/Loomo_Loco_Conn/src/main/res/values/colors.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 105,
+                        "endColumn": 50,
+                        "endOffset": 151
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 199,
+                    "endColumn": 57,
+                    "endOffset": 252
+                },
+                "from": {
+                    "file": "/Users/pbanavara/Downloads/Loomo_Loco_Conn/src/main/res/values/dimens.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 90,
+                        "endColumn": 57,
+                        "endOffset": 143
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 257,
+                    "endColumn": 55,
+                    "endOffset": 308
+                },
+                "from": {
+                    "file": "/Users/pbanavara/Downloads/Loomo_Loco_Conn/src/main/res/values/dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 149,
+                        "endColumn": 55,
+                        "endOffset": 200
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 313,
+                    "endColumn": 55,
+                    "endOffset": 364
+                },
+                "from": {
+                    "file": "/Users/pbanavara/Downloads/Loomo_Loco_Conn/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1026,
+                        "endColumn": 55,
+                        "endOffset": 1077
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 369,
+                    "endColumn": 53,
+                    "endOffset": 418
+                },
+                "from": {
+                    "file": "/Users/pbanavara/Downloads/Loomo_Loco_Conn/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 1,
+                        "startColumn": 4,
+                        "startOffset": 17,
+                        "endColumn": 53,
+                        "endOffset": 66
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 423,
+                    "endColumn": 47,
+                    "endOffset": 466
+                },
+                "from": {
+                    "file": "/Users/pbanavara/Downloads/Loomo_Loco_Conn/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 928,
+                        "endColumn": 47,
+                        "endOffset": 971
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 471,
+                    "endColumn": 49,
+                    "endOffset": 516
+                },
+                "from": {
+                    "file": "/Users/pbanavara/Downloads/Loomo_Loco_Conn/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 612,
+                        "endColumn": 49,
+                        "endOffset": 657
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 521,
+                    "endColumn": 45,
+                    "endOffset": 562
+                },
+                "from": {
+                    "file": "/Users/pbanavara/Downloads/Loomo_Loco_Conn/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 565,
+                        "endColumn": 45,
+                        "endOffset": 606
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 567,
+                    "endColumn": 47,
+                    "endOffset": 610
+                },
+                "from": {
+                    "file": "/Users/pbanavara/Downloads/Loomo_Loco_Conn/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 977,
+                        "endColumn": 47,
+                        "endOffset": 1020
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 615,
+                    "endColumn": 37,
+                    "endOffset": 648
+                },
+                "from": {
+                    "file": "/Users/pbanavara/Downloads/Loomo_Loco_Conn/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 342,
+                        "endColumn": 37,
+                        "endOffset": 375
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 653,
+                    "endColumn": 35,
+                    "endOffset": 684
+                },
+                "from": {
+                    "file": "/Users/pbanavara/Downloads/Loomo_Loco_Conn/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 663,
+                        "endColumn": 35,
+                        "endOffset": 694
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 689,
+                    "endColumn": 42,
+                    "endOffset": 727
+                },
+                "from": {
+                    "file": "/Users/pbanavara/Downloads/Loomo_Loco_Conn/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 137,
+                        "endColumn": 42,
+                        "endOffset": 175
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 732,
+                    "endColumn": 63,
+                    "endOffset": 791
+                },
+                "from": {
+                    "file": "/Users/pbanavara/Downloads/Loomo_Loco_Conn/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 802,
+                        "endColumn": 63,
+                        "endOffset": 861
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 796,
+                    "endColumn": 51,
+                    "endOffset": 843
+                },
+                "from": {
+                    "file": "/Users/pbanavara/Downloads/Loomo_Loco_Conn/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 749,
+                        "endColumn": 51,
+                        "endOffset": 796
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 848,
+                    "endColumn": 39,
+                    "endOffset": 883
+                },
+                "from": {
+                    "file": "/Users/pbanavara/Downloads/Loomo_Loco_Conn/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 381,
+                        "endColumn": 39,
+                        "endOffset": 416
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 888,
+                    "endColumn": 65,
+                    "endOffset": 949
+                },
+                "from": {
+                    "file": "/Users/pbanavara/Downloads/Loomo_Loco_Conn/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 181,
+                        "endColumn": 65,
+                        "endOffset": 242
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 954,
+                    "endColumn": 63,
+                    "endOffset": 1013
+                },
+                "from": {
+                    "file": "/Users/pbanavara/Downloads/Loomo_Loco_Conn/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 72,
+                        "endColumn": 63,
+                        "endOffset": 131
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1018,
+                    "endColumn": 53,
+                    "endOffset": 1067
+                },
+                "from": {
+                    "file": "/Users/pbanavara/Downloads/Loomo_Loco_Conn/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 287,
+                        "endColumn": 53,
+                        "endOffset": 336
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1072,
+                    "endColumn": 37,
+                    "endOffset": 1105
+                },
+                "from": {
+                    "file": "/Users/pbanavara/Downloads/Loomo_Loco_Conn/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 248,
+                        "endColumn": 37,
+                        "endOffset": 281
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1110,
+                    "endColumn": 39,
+                    "endOffset": 1145
+                },
+                "from": {
+                    "file": "/Users/pbanavara/Downloads/Loomo_Loco_Conn/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 471,
+                        "endColumn": 39,
+                        "endOffset": 506
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1150,
+                    "endColumn": 51,
+                    "endOffset": 1197
+                },
+                "from": {
+                    "file": "/Users/pbanavara/Downloads/Loomo_Loco_Conn/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 512,
+                        "endColumn": 51,
+                        "endOffset": 559
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1202,
+                    "endColumn": 47,
+                    "endOffset": 1245
+                },
+                "from": {
+                    "file": "/Users/pbanavara/Downloads/Loomo_Loco_Conn/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 422,
+                        "endColumn": 47,
+                        "endOffset": 465
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 1250,
+                    "endColumn": 59,
+                    "endOffset": 1305
+                },
+                "from": {
+                    "file": "/Users/pbanavara/Downloads/Loomo_Loco_Conn/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 867,
+                        "endColumn": 59,
+                        "endOffset": 922
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 1310,
+                    "endColumn": 47,
+                    "endOffset": 1353
+                },
+                "from": {
+                    "file": "/Users/pbanavara/Downloads/Loomo_Loco_Conn/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 700,
+                        "endColumn": 47,
+                        "endOffset": 743
+                    }
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e6c7a4d3e39cc17daf6a3c487f92473d8becd7ee">
+        <dex dex="/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7ed1737168d675394df7482ab1e41e09a6caac6b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/exploded-aar/com.segway.robot/base-connectivity-sdk/1.0/jars/libs/mina-core-2.0.13.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e442feab40134d77aab0af454ca1528427c67158">
+        <dex dex="/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/transforms/dex/debug/folders/1000/10/mina-core-2.0.13_39b450d668bc3a68c006069d2384597e471884ca/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/exploded-aar/com.segway.robot/base-connectivity-sdk/1.0/jars/libs/slf4j-api-1.7.14.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="1bdf26979864b3605d61bfbde664474dbe52b13a">
+        <dex dex="/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/transforms/dex/debug/folders/1000/10/slf4j-api-1.7.14_8cdf2201a6e9676326ddf684b064e6ab91f31837/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d2bca1139bf0b5ef803986b963573fe2b8175666">
+        <dex dex="/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_9533a3df5bf0a4cca8bba4a8c4022c9f7879daa4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/exploded-aar/com.segway.robot/base-connectivity-sdk/1.0/jars/libs/slf4j-nop-1.7.14.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b9da43afb34b0cc4cfb0b5afef9e5b8f2e155e0e">
+        <dex dex="/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/transforms/dex/debug/folders/1000/10/slf4j-nop-1.7.14_faff12a59be59470b91ca6a7b4ace5e8faa5dd89/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/exploded-aar/com.segway.robot/headsdk/0.5.27/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="4198da74cf4818a57299da421c05ebf37d7771a2">
+        <dex dex="/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/transforms/dex/debug/folders/1000/10/com.segway.robot-headsdk-0.5.27_38557f75537573833a06e7ca7f83ae7d3fcae657/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/exploded-aar/com.segway.robot/robot-connectivity-sdk/0.5.9/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="61fa513725672369c0afdc7681834c1f72e7ef79">
+        <dex dex="/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/transforms/dex/debug/folders/1000/10/com.segway.robot-robot-connectivity-sdk-0.5.9_463431aba65a422f7d3c0fa72cc9bf211f56d607/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/exploded-aar/com.segway.robot/mobile-connectivity-sdk/0.5.9/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="82f9c8f8997e3208632c85104393b6f69c19cfe2">
+        <dex dex="/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/transforms/dex/debug/folders/1000/10/com.segway.robot-mobile-connectivity-sdk-0.5.9_c81fa0f2ba57c2a98259107b2f4aaa920ff17406/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/exploded-aar/com.segway.robot/sdkbase/0.1.24/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="09049761d460a582ec4bb6346730e134fd8cf40a">
+        <dex dex="/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/transforms/dex/debug/folders/1000/10/com.segway.robot-sdkbase-0.1.24_6c5e061956e66627c5871d7bc88a3d49d5ffc6a0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/exploded-aar/com.segway.robot/basesdk/0.5.27/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="83d55b9caa57cb40522d90dee2e27deee0ad75f2">
+        <dex dex="/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/transforms/dex/debug/folders/1000/10/com.segway.robot-basesdk-0.5.27_903d1e5d4cb95fb5a438fac95989ff19bafbe801/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/exploded-aar/com.segway.robot/base-connectivity-sdk/1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c0988ddf9eb086e0c017fbe2ce8fb3a7e1e0c16b">
+        <dex dex="/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/transforms/dex/debug/folders/1000/10/com.segway.robot-base-connectivity-sdk-1.0_75dfdca394f14c0f62ae9825f24338fdea6f2be3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/pbanavara/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/Users/pbanavara/Downloads/Loomo_Loco_Conn/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.1.1_2b15379b9a984ecd6388a1e2cb34f1e6ad6e77f6/classes.dex" />
+    </item>
+
+</items>
