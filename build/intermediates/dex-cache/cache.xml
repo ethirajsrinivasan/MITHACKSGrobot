@@ -16,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="22.0.0"
-        sha1="0c8788657a1d2da6f7aa0e2288f577695ed22e45">
+        sha1="ee3344ac11fa7879661bbc8340b5e241412e5b69">
         <dex dex="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_122524099fd7449f8323eabc61c848c38ba9e32f/classes.dex" />
     </item>
     <item
@@ -88,7 +88,7 @@
         jumboMode="true"
         optimize="true"
         revision="22.0.0"
-        sha1="c41129074d4794001f0364643000aa39ed6707fe">
+        sha1="443c0e6204183a748f72680be534fa22dfd38911">
         <dex dex="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_a763241587018aaf84c2837e7abb2d1129d6ad5d/classes.dex" />
     </item>
     <item

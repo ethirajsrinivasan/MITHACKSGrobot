@@ -68,7 +68,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             try {
                 final LinearVelocity lv = mBase.getLinearVelocity();
                 Log.d("Linear Velocity ::" , lv.toString());
-                
+
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -156,7 +156,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
             Log.d(TAG, "onMessageReceived: id=" + message.getId() + ";timestamp=" + message.getTimestamp());
             if (message instanceof StringMessage) {
                 //message received is StringMessage
-                moveRobot();
+                if(message.toString().equals("Go")){
+                  moveRobot();
+                  moveRobot();
+                  moveRobot();
+                }
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {

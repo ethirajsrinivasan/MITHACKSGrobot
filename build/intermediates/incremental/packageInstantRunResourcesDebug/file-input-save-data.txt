@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sat Feb 11 19:46:24 SGT 2017
+#Sat Feb 11 20:48:41 SGT 2017
 1.base=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/res/resources-debug.ap_
 1.file=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/res/resources-debug.ap_/resources.arsc
 2.base=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/res/resources-debug.ap_

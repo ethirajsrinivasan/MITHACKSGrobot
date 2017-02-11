@@ -5,29 +5,29 @@
     density="hdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="1608246372687"
+    timestamp="5221417583791"
     token="1229046795798977746"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="232" />
+        duration="101" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="43" />
+        duration="4" />
     <task
         name="verifier"
-        duration="2" />
+        duration="0" />
 
     <artifact
         location="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/outputs/apk/ConnectivitySample_Robot-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="1608246372687"
+        timestamp="5221417583791"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/outputs/apk/ConnectivitySample_Robot-debug.apk"
