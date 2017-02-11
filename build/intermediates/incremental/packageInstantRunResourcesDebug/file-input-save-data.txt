@@ -1,0 +1,15 @@
+#Internal package file, do not edit.
+#Sat Feb 11 12:52:21 SGT 2017
+1.base=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/res/resources-debug.ap_
+1.file=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/res/resources-debug.ap_/resources.arsc
+2.base=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/res/resources-debug.ap_
+3.set=ANDROID_RESOURCE
+2.set=ANDROID_RESOURCE
+2.file=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/res/resources-debug.ap_/res/layout/activity_main.xml
+count=4
+1.set=ANDROID_RESOURCE
+3.base=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/res/resources-debug.ap_
+0.set=ANDROID_RESOURCE
+0.base=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/res/resources-debug.ap_
+3.file=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/res/resources-debug.ap_/AndroidManifest.xml
+0.file=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/res/resources-debug.ap_/res/mipmap-xxxhdpi-v4/ic_launcher.png
