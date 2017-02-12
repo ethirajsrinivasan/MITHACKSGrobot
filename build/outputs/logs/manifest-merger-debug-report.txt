@@ -34,11 +34,13 @@ MERGED from [com.segway.robot:robot-connectivity-sdk:0.5.9] /home/ethi/AndroidSt
 	android:name
 		ADDED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/AndroidManifest.xml:8:22-73
 uses-feature#android.hardware.usb.host
-ADDED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/AndroidManifest.xml:9:5-62
+ADDED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/AndroidManifest.xml:9:5-85
+	android:required
+		ADDED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/AndroidManifest.xml:9:60-83
 	android:name
 		ADDED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/AndroidManifest.xml:9:19-59
 application
-ADDED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/AndroidManifest.xml:11:5-31:19
+ADDED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/AndroidManifest.xml:11:5-31:20
 	android:label
 		ADDED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/AndroidManifest.xml:14:9-41
 	android:supportsRtl
@@ -48,7 +50,7 @@ ADDED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/An
 	android:icon
 		ADDED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/AndroidManifest.xml:13:9-43
 activity#com.segway.robot.lomoremoterobot.MainActivity
-ADDED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/AndroidManifest.xml:16:9-26:20
+ADDED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/AndroidManifest.xml:16:9-24:20
 	android:screenOrientation
 		ADDED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/AndroidManifest.xml:17:13-50
 	android:name
@@ -63,24 +65,18 @@ category#android.intent.category.LAUNCHER
 ADDED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/AndroidManifest.xml:21:17-76
 	android:name
 		ADDED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/AndroidManifest.xml:21:27-74
-intent-filter#android.hardware.usb.action.USB_DEVICE_ATTACHED
-ADDED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/AndroidManifest.xml:23:13-25:29
-action#android.hardware.usb.action.USB_DEVICE_ATTACHED
-ADDED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/AndroidManifest.xml:24:17-90
-	android:name
-		ADDED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/AndroidManifest.xml:24:25-87
 meta-data#packageTo2
-ADDED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/AndroidManifest.xml:27:9-107
+ADDED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/AndroidManifest.xml:25:9-107
 	android:value
-		ADDED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/AndroidManifest.xml:27:46-94
+		ADDED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/AndroidManifest.xml:25:46-94
 	android:name
-		ADDED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/AndroidManifest.xml:27:20-45
-meta-data#android.hardware.usb.action.USB_DEVICE_ATTACHED
-ADDED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/AndroidManifest.xml:28:9-30:57
-	android:resource
-		ADDED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/AndroidManifest.xml:30:17-54
+		ADDED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/AndroidManifest.xml:25:20-45
+service#com.segway.robot.lomoremoterobot.UsbService
+ADDED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/AndroidManifest.xml:26:9-29:19
+	android:enabled
+		ADDED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/AndroidManifest.xml:28:13-35
 	android:name
-		ADDED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/AndroidManifest.xml:29:17-79
+		ADDED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/AndroidManifest.xml:27:13-71
 uses-sdk
 INJECTED from /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.segway.robot:robot-connectivity-sdk:0.5.9] /home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/exploded-aar/com.segway.robot/robot-connectivity-sdk/0.5.9/AndroidManifest.xml:7:5-9:41

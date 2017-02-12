@@ -3,16 +3,23 @@ package com.segway.robot.lomoremoterobot;
 import android.app.Activity;
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
+import java.io.UnsupportedEncodingException;
+
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.ServiceConnection;
 import android.hardware.usb.UsbDevice;
 import android.hardware.usb.UsbDeviceConnection;
 import android.hardware.usb.UsbManager;
+import android.net.Uri;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.IBinder;
+import android.os.Handler;
 import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.MenuItem;
@@ -53,22 +60,27 @@ import java.util.Timer;
 
 import static android.R.attr.x;
 import static android.R.attr.y;
+import java.lang.ref.WeakReference;
+import java.util.Set;
+
 import static android.R.transition.move;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
-    public final String ACTION_USB_PERMISSION = "com.hariharan.arduinousb.USB_PERMISSION";
+    public final String ACTION_USB_PERMISSION = "com.segway.robot.lomoremoterobot.USB_PERMISSION";
     private boolean isBind = false;
     Base mBase;
     private static final int RUN_TIME = 2000;
     private Timer mTimer;
-
+    private Handler mHandler;
     private static final String TAG = "RobotActivity";
     private int press = 0;
     private EditText editTextContext;
     private TextView textViewIp;
     private Button sendByteButton;
     private Button sendStringButton;
+    public static final int MESSAGE_FROM_SERIAL_PORT = 0;
+    private UsbService usbService;
 
     SimpleController mController;
 
@@ -82,6 +94,18 @@ public class MainActivity extends Activity implements View.OnClickListener {
     UsbSerialDevice serialPort;
     UsbDeviceConnection connection;
 
+    private final ServiceConnection usbConnection = new ServiceConnection() {
+        @Override
+        public void onServiceConnected(ComponentName arg0, IBinder arg1) {
+            usbService = ((UsbService.UsbBinder) arg1).getService();
+            usbService.setHandler(mHandler);
+        }
+
+        @Override
+        public void onServiceDisconnected(ComponentName arg0) {
+            usbService = null;
+        }
+    };
 
     private ServiceBinder.BindStateListener initBinder = new ServiceBinder.BindStateListener() {
         @Override
@@ -89,12 +113,13 @@ public class MainActivity extends Activity implements View.OnClickListener {
             isBind = true;
             try {
                 final LinearVelocity lv = mBase.getLinearVelocity();
-                Log.d("Linear Velocity ::" , lv.toString());
+                Log.d("Linear Velocity ::", lv.toString());
 
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }
+
         @Override
         public void onUnbind(String reason) {
             isBind = false;
@@ -178,9 +203,22 @@ public class MainActivity extends Activity implements View.OnClickListener {
             Log.d(TAG, "onMessageReceived: id=" + message.getId() + ";timestamp=" + message.getTimestamp());
             if (message instanceof StringMessage) {
                 //message received is StringMessage
-                Log.d(TAG,message.getContent().toString() );
-                if(message.getContent().toString().equals("Go")){
-                  moveRobot();
+                Log.d(TAG, message.getContent().toString());
+                if (message.getContent().toString().equals("Go")) {
+                    moveRobot();
+                }
+                if (message.getContent().toString().equals("Grab") && (usbService != null)) {
+                    //byte[] x= new byte[0,0,0,0,0,0,0,0]
+                    int i = 0;
+                    String s = "1";
+                    usbService.write(s.getBytes());
+                    Log.d(TAG, "0 to Serial port");
+                }
+                if (message.getContent().toString().equals("Release") && (usbService != null)) {
+                    //serialPort.write("0".getBytes());
+                    String s = "0";
+                    usbService.write(s.getBytes());
+
                 }
                 runOnUiThread(new Runnable() {
                     @Override
@@ -279,6 +317,19 @@ public class MainActivity extends Activity implements View.OnClickListener {
         }
     }
 
+    private UsbSerialInterface.UsbReadCallback mCallback = new UsbSerialInterface.UsbReadCallback() {
+        @Override
+        public void onReceivedData(byte[] arg0) {
+            try {
+                String data = new String(arg0, "UTF-8");
+                if (mHandler != null)
+                    mHandler.obtainMessage(MESSAGE_FROM_SERIAL_PORT, data).sendToTarget();
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            }
+        }
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -297,6 +348,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         sendByteButton = (Button) findViewById(R.id.button_send_byte);
         sendByteButton.setOnClickListener(this);
+        mHandler = new MyHandler(this);
 
         sendStringButton = (Button) findViewById(R.id.button_send_string);
         sendStringButton.setOnClickListener(this);
@@ -304,7 +356,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         filter.addAction(ACTION_USB_PERMISSION);
         filter.addAction(UsbManager.ACTION_USB_DEVICE_ATTACHED);
         filter.addAction(UsbManager.ACTION_USB_DEVICE_DETACHED);
-        registerReceiver(broadcastReceiver, filter);
+        //registerReceiver(broadcastReceiver, filter);
 
         //get RobotMessageRouter
 //        mRobotMessageRouter = RobotMessageRouter.getInstance();
@@ -317,56 +369,88 @@ public class MainActivity extends Activity implements View.OnClickListener {
         mRobotMessageRouter = RobotMessageRouter.getInstance();
         mRobotMessageRouter.bindService(this, mBindStateListener);
         mBase.bindService(getApplicationContext(), initBinder);
+
     }
 
-    private final BroadcastReceiver broadcastReceiver = new BroadcastReceiver() { //Broadcast Receiver to automatically start and stop the Serial connection.
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            if (intent.getAction().equals(ACTION_USB_PERMISSION)) {
-                boolean granted = intent.getExtras().getBoolean(UsbManager.EXTRA_PERMISSION_GRANTED);
-                if (granted) {
-                    connection = usbManager.openDevice(device);
-                    serialPort = UsbSerialDevice.createUsbSerialDevice(device, connection);
-                    if (serialPort != null) {
-                        if (serialPort.open()) { //Set Serial Connection Parameters.
-//                            setUiEnabled(true);
-                            serialPort.setBaudRate(9600);
-                            serialPort.setDataBits(UsbSerialInterface.DATA_BITS_8);
-                            serialPort.setStopBits(UsbSerialInterface.STOP_BITS_1);
-                            serialPort.setParity(UsbSerialInterface.PARITY_NONE);
-                            serialPort.setFlowControl(UsbSerialInterface.FLOW_CONTROL_OFF);
-                            // serialPort.read(mCallback);
-                            // tvAppend(textView,"Serial Connection Opened!\n");
+    /*
+        private final BroadcastReceiver broadcastReceiver = new BroadcastReceiver() { //Broadcast Receiver to automatically start and stop the Serial connection.
+            @Override
+            public void onReceive(Context context, Intent intent) {
+                if (intent.getAction().equals(ACTION_USB_PERMISSION)) {
+                    Log.d(TAG,"Inside request permission");
 
+                    boolean granted = intent.getExtras().getBoolean(UsbManager.EXTRA_PERMISSION_GRANTED);
+                    if (granted) {
+                        Log.d(TAG,"Inside request permission 1");
+                        connection = usbManager.openDevice(device);
+                        serialPort = UsbSerialDevice.createUsbSerialDevice(device, connection);
+                        if (serialPort != null) {
+                            Log.d(TAG,"Inside request permission 2");
+                            if (serialPort.open()) { //Set Serial Connection Parameters.
+    //                            setUiEnabled(true);
+                                Log.d(TAG,"Inside request permission 3");
+                                serialPort.setBaudRate(9600);
+                                serialPort.setDataBits(UsbSerialInterface.DATA_BITS_8);
+                                serialPort.setStopBits(UsbSerialInterface.STOP_BITS_1);
+                                serialPort.setParity(UsbSerialInterface.PARITY_NONE);
+                                serialPort.setFlowControl(UsbSerialInterface.FLOW_CONTROL_OFF);
+                                 serialPort.read(mCallback);
+                                // tvAppend(textView,"Serial Connection Opened!\n");
+
+                            } else {
+                                Log.d("SERIAL", "PORT NOT OPEN");
+                            }
                         } else {
-                            Log.d("SERIAL", "PORT NOT OPEN");
+                            Log.d("SERIAL", "PORT IS NULL");
                         }
                     } else {
-                        Log.d("SERIAL", "PORT IS NULL");
+                        Log.d("SERIAL", "PERM NOT GRANTED");
                     }
-                } else {
-                    Log.d("SERIAL", "PERM NOT GRANTED");
+                } else if (intent.getAction().equals(UsbManager.ACTION_USB_DEVICE_ATTACHED)) {
+                    onClickStart();
+                } else if (intent.getAction().equals(UsbManager.ACTION_USB_DEVICE_DETACHED)) {
+                    onClickStop();
                 }
-            } else if (intent.getAction().equals(UsbManager.ACTION_USB_DEVICE_ATTACHED)) {
-                onClickStart();
-            } else if (intent.getAction().equals(UsbManager.ACTION_USB_DEVICE_DETACHED)) {
-                onClickStop();
+            }
+            ;
+        };
+    */
+    private final BroadcastReceiver mUsbReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            switch (intent.getAction()) {
+                case UsbService.ACTION_USB_PERMISSION_GRANTED: // USB PERMISSION GRANTED
+                    Toast.makeText(context, "USB Ready", Toast.LENGTH_SHORT).show();
+                    break;
+                case UsbService.ACTION_USB_PERMISSION_NOT_GRANTED: // USB PERMISSION NOT GRANTED
+                    Toast.makeText(context, "USB Permission not granted", Toast.LENGTH_SHORT).show();
+                    break;
+                case UsbService.ACTION_NO_USB: // NO USB CONNECTED
+                    Toast.makeText(context, "No USB connected", Toast.LENGTH_SHORT).show();
+                    break;
+                case UsbService.ACTION_USB_DISCONNECTED: // USB DISCONNECTED
+                    Toast.makeText(context, "USB disconnected", Toast.LENGTH_SHORT).show();
+                    break;
+                case UsbService.ACTION_USB_NOT_SUPPORTED: // USB NOT SUPPORTED
+                    Toast.makeText(context, "USB device not supported", Toast.LENGTH_SHORT).show();
+                    break;
             }
         }
-        ;
     };
 
     public void onClickStart() {
-        Log.d(TAG,"insdie on click start usb");
+        Log.d(TAG, "insdie on click start usb");
 
         HashMap<String, UsbDevice> usbDevices = usbManager.getDeviceList();
         if (!usbDevices.isEmpty()) {
+            Log.d(TAG, "insdie on click start usb 1");
             boolean keep = true;
             for (Map.Entry<String, UsbDevice> entry : usbDevices.entrySet()) {
                 device = entry.getValue();
                 int deviceVID = device.getVendorId();
                 if (deviceVID == 0x2341)//Arduino Vendor ID
                 {
+                    Log.d(TAG, "insdie on click start usb 2");
                     PendingIntent pi = PendingIntent.getBroadcast(this, 0, new Intent(ACTION_USB_PERMISSION), 0);
                     usbManager.requestPermission(device, pi);
                     keep = false;
@@ -404,11 +488,15 @@ public class MainActivity extends Activity implements View.OnClickListener {
     @Override
     public void onPause() {
         super.onPause();
+        unregisterReceiver(mUsbReceiver);
+        unbindService(usbConnection);
     }
 
     @Override
     public void onResume() {
         super.onResume();
+        setFilters();  // Start listening notifications from UsbService
+        startService(UsbService.class, usbConnection, null);
     }
 
     @Override
@@ -420,6 +508,32 @@ public class MainActivity extends Activity implements View.OnClickListener {
         if (press == 2) {
             super.onBackPressed();
         }
+    }
+
+    private void startService(Class<?> service, ServiceConnection serviceConnection, Bundle extras) {
+        if (!UsbService.SERVICE_CONNECTED) {
+            Intent startService = new Intent(this, service);
+            if (extras != null && !extras.isEmpty()) {
+                Set<String> keys = extras.keySet();
+                for (String key : keys) {
+                    String extra = extras.getString(key);
+                    startService.putExtra(key, extra);
+                }
+            }
+            startService(startService);
+        }
+        Intent bindingIntent = new Intent(this, service);
+        bindService(bindingIntent, serviceConnection, Context.BIND_AUTO_CREATE);
+    }
+
+    private void setFilters() {
+        IntentFilter filter = new IntentFilter();
+        filter.addAction(UsbService.ACTION_USB_PERMISSION_GRANTED);
+        filter.addAction(UsbService.ACTION_NO_USB);
+        filter.addAction(UsbService.ACTION_USB_DISCONNECTED);
+        filter.addAction(UsbService.ACTION_USB_NOT_SUPPORTED);
+        filter.addAction(UsbService.ACTION_USB_PERMISSION_NOT_GRANTED);
+        registerReceiver(mUsbReceiver, filter);
     }
 
     @Override
@@ -572,4 +686,35 @@ public class MainActivity extends Activity implements View.OnClickListener {
         return name;
     }
 
+
+    @Override
+    public void onStart() {
+        super.onStart();
+
+
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+
+
+    }
+
+    private static class MyHandler extends Handler {
+        private final WeakReference<MainActivity> mActivity;
+
+        public MyHandler(MainActivity activity) {
+            mActivity = new WeakReference<>(activity);
+        }
+
+        @Override
+        public void handleMessage(android.os.Message msg) {
+            switch (msg.what) {
+                case UsbService.MESSAGE_FROM_SERIAL_PORT:
+                    String data = (String) msg.obj;
+                    break;
+            }
+        }
+    }
 }

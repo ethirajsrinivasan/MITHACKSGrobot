@@ -1,13 +1,13 @@
 #Internal package file, do not edit.
-#Sun Feb 12 01:05:59 SGT 2017
+#Sun Feb 12 03:17:32 SGT 2017
 1.base=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/res/resources-debug.ap_
 4.file=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/res/resources-debug.ap_/res/xml/device_filter.xml
-1.file=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/res/resources-debug.ap_/resources.arsc
+1.file=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/res/resources-debug.ap_/res/layout/activity_main.xml
 4.set=ANDROID_RESOURCE
 2.base=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/res/resources-debug.ap_
 3.set=ANDROID_RESOURCE
 2.set=ANDROID_RESOURCE
-2.file=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/res/resources-debug.ap_/res/layout/activity_main.xml
+2.file=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/res/resources-debug.ap_/resources.arsc
 count=5
 1.set=ANDROID_RESOURCE
 3.base=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/res/resources-debug.ap_
