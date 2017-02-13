@@ -1,7 +1,7 @@
-#Sun Feb 12 02:26:35 SGT 2017
-base.0=G\:\\AndroidWorkspace\\Text_Loco_Combination\\MITHACKSGrobot\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_6c79b0ccb71013afdbf5f8be0eb90f903ad2b167
+#Sun Feb 12 11:39:37 SGT 2017
+base.0=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_a763241587018aaf84c2837e7abb2d1129d6ad5d
 renamed.1=classes.dex
 renamed.0=classes2.dex
-file.1=G\:\\AndroidWorkspace\\Text_Loco_Combination\\MITHACKSGrobot\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_48684c5613bd0c98c1064eb4bc17e66c4efad2db\\classes.dex
-base.1=G\:\\AndroidWorkspace\\Text_Loco_Combination\\MITHACKSGrobot\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_48684c5613bd0c98c1064eb4bc17e66c4efad2db
-file.0=G\:\\AndroidWorkspace\\Text_Loco_Combination\\MITHACKSGrobot\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_6c79b0ccb71013afdbf5f8be0eb90f903ad2b167\\classes.dex
+file.1=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_122524099fd7449f8323eabc61c848c38ba9e32f/classes.dex
+base.1=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_122524099fd7449f8323eabc61c848c38ba9e32f
+file.0=/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_a763241587018aaf84c2837e7abb2d1129d6ad5d/classes.dex
