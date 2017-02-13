@@ -16,8 +16,17 @@
         jumboMode="true"
         optimize="true"
         revision="22.0.0"
-        sha1="994dc93b84a7c31b3bca3f853e45c5decaa3b8f4">
+        sha1="6bdf49801216e8562e387251ad02cdeb79316739">
         <dex dex="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_122524099fd7449f8323eabc61c848c38ba9e32f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/libs/usbserial.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.0"
+        sha1="450a08132dff830581b2b82c380c5f32488159d3">
+        <dex dex="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/transforms/dex/debug/folders/1000/2/usbserial_878e253908ab67cbdb13e5d5931f945a8ea536e4/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -48,12 +57,30 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/exploded-aar/com.segway.robot/sdkbase/0.1.22/jars/classes.jar"
+        jar="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/exploded-aar/com.segway.robot/headsdk/0.5.27/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="22.0.0"
-        sha1="93c684f9b4c4d38b26d6541908c7d8b399bb1011">
-        <dex dex="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/transforms/dex/debug/folders/1000/10/com.segway.robot-sdkbase-0.1.22_809cceda834f3f6ef2806c1853af276beb2db99f/classes.dex" />
+        sha1="4198da74cf4818a57299da421c05ebf37d7771a2">
+        <dex dex="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/transforms/dex/debug/folders/1000/10/com.segway.robot-headsdk-0.5.27_c907211f8c301a6e03dd03e3250bd36361a3d4c1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/exploded-aar/com.segway.robot/basesdk/0.5.27/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.0"
+        sha1="83d55b9caa57cb40522d90dee2e27deee0ad75f2">
+        <dex dex="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/transforms/dex/debug/folders/1000/10/com.segway.robot-basesdk-0.5.27_a52ec0c5e155b849b6dacd7ead853a7d34189e13/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/exploded-aar/com.segway.robot/sdkbase/0.1.24/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.0"
+        sha1="09049761d460a582ec4bb6346730e134fd8cf40a">
+        <dex dex="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/transforms/dex/debug/folders/1000/10/com.segway.robot-sdkbase-0.1.24_4e4ae3a839a2f2e3f32114ccf1047092d3179e91/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -70,8 +97,17 @@
         jumboMode="true"
         optimize="true"
         revision="22.0.0"
-        sha1="c9cb05d3a50a4cc5949a03c6ba49708c701e36e4">
+        sha1="10c814304b1da97c8de3e885c6e77e36895857f8">
         <dex dex="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_a763241587018aaf84c2837e7abb2d1129d6ad5d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ethi/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.0"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/home/ethi/AndroidStudioProjects/ConnectivitySample_Robot/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.1.1_4ce80107fa225b68d7cce573aa6c4c96d307bfc5/classes.dex" />
     </item>
 
 </items>

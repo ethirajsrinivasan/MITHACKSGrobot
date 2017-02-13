@@ -5,13 +5,18 @@
     android:versionName="1.1" >
 
     <uses-sdk
-        android:minSdkVersion="17"
+        android:minSdkVersion="19"
         android:targetSdkVersion="22" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        android:required="true" />
+
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
@@ -34,6 +39,11 @@
         <meta-data
             android:name="packageTo2"
             android:value="com.segway.robot.lomoremotephone" />
+
+        <service
+            android:name="com.segway.robot.lomoremoterobot.UsbService"
+            android:enabled="true" >
+        </service>
     </application>
 
 </manifest>
